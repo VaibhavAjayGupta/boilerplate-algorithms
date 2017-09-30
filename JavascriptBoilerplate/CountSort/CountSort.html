@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>Sort the given numbers in descending order using countsort:</p>
+
+    <form id="frm1" action="">
+        Numbers : <input type="text" id="arrayInput"> Ex - 9,3,4,5,6<br> Output: <span id="output"></span><br><br>
+        <input type="button" onclick="find()" value="Sort">
+    </form>
+
+    <script>
+        function countSort(inputArray) { // CountSort
+            let tempArray = [], sortedArray = [];
+            let maxValue = 0;
+            for (let value of inputArray) { // count the number of each element and store in new array
+                if (tempArray[value] == undefined || tempArray[value] == null) {
+                    tempArray[value] = 1;
+                } else
+                    tempArray[value] = tempArray[value] + 1;
+
+                if (maxValue < value) {
+                    maxValue = value;
+                }
+            }
+
+            for (let i = maxValue; i >= 0; i--) { // push all the elements to sorted array in decreasing order
+                if (tempArray[i] != undefined || tempArray[i] != null) {
+                    for (let j = 0; j < tempArray[i]; j++) {
+                        sortedArray.push(i);
+                    }
+                }
+            }
+            return sortedArray;
+        }
+        function find() {
+            let inputArr = document.getElementById("arrayInput").value.split(","); // convert the input into array
+            let outputArr = countSort(inputArr);
+            document.getElementById("output").innerHTML = outputArr;
+        }
+    </script>
+
+</body>
+
+</html>
