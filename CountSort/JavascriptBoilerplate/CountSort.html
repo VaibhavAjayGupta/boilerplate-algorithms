@@ -14,7 +14,7 @@
             let tempArray = [], sortedArray = [];
             let maxValue = 0;
             for (let value of inputArray) { // count the number of each element and store in new array
-                if (tempArray[value] == undefined || tempArray[value] == null) {
+                if (typeof tempArray[value] == undefined || tempArray[value] == null) {
                     tempArray[value] = 1;
                 } else
                     tempArray[value] = tempArray[value] + 1;
@@ -25,7 +25,7 @@
             }
 
             for (let i = maxValue; i >= 0; i--) { // push all the elements to sorted array in decreasing order
-                if (tempArray[i] != undefined || tempArray[i] != null) {
+                if (typeof tempArray[i] != undefined || tempArray[i] != null) {
                     for (let j = 0; j < tempArray[i]; j++) {
                         sortedArray.push(i);
                     }
