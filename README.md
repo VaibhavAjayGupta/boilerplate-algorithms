@@ -5,7 +5,7 @@
 <p><strong>Completed :-</strong></p>
 
 <ul>
-	<li data-empty="true"><a href='https://vaibhavajaygupta.github.io/boilerplate-algorithms/CountingSort/JavascriptBoilerplate/CountingSort.html'  target="_blank">Demo Of Counting Sort</a>Counting Sort sorting algorithm completed in javascript. </li>
+	<li data-empty="true"><a href='https://vaibhavajaygupta.github.io/boilerplate-algorithms/CountingSort/JavascriptBoilerplate/CountingSort.html'  target="_blank">Demo Of Counting Sort </a> :Counting Sort sorting algorithm completed in javascript. </li>
 
 </ul>
 
