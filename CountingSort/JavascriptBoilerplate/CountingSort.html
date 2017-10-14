@@ -13,6 +13,7 @@
         function countSort(inputArray) { // CountSort
             let tempArray = [], sortedArray = [];
             let maxValue = 0;
+
             for (let value of inputArray) { // count the number of each element and store in new array
                 if (typeof tempArray[value] == undefined || tempArray[value] == null) {
                     tempArray[value] = 1;
@@ -24,17 +25,31 @@
                 }
             }
 
-            for (let i = maxValue; i >= 0; i--) { // push all the elements to sorted array in decreasing order
-                if (typeof tempArray[i] != undefined || tempArray[i] != null) {
-                    for (let j = 0; j < tempArray[i]; j++) {
-                        sortedArray.push(i);
-                    }
+            // update the temp array to store the count of values before a particular value
+            for (let i = 1; i <= maxValue; i++) {
+                if (typeof tempArray[i - 1] == undefined || tempArray[i - 1] == null) { // if value is null set it to 0
+                    tempArray[i - 1] = 0;
                 }
+                if (typeof tempArray[i] == undefined || tempArray[i] == null) { //if value is null set it to 0
+                    tempArray[i] = 0;
+                }
+                tempArray[i] = tempArray[i - 1] + tempArray[i];
             }
+
+            // insert values in sorted array
+            for (let i = inputArray.length - 1; i >= 0; i--) {
+                sortedArray[tempArray[inputArray[i]]-1] = inputArray[i];
+                tempArray[inputArray[i]] = tempArray[inputArray[i]] - 1;
+            }
+
             return sortedArray;
         }
         function find() {
             let inputArr = document.getElementById("arrayInput").value.split(","); // convert the input into array
+            inputArr = inputArr.map(function (x) {
+                return parseInt(x);
+            });
+
             let outputArr = countSort(inputArr);
             document.getElementById("output").innerHTML = outputArr;
         }
