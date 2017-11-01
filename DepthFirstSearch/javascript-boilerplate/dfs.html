@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Depth First Search of an Adjacency list representation of a graph</title>
+    </head>
+    <body onload="createDefaultGraph()">
+        <h2>Depth first search(DFS) of an Undirected Graph</h2>
+        Use default graph Or Create a new Graph<br/>
+        Enter vertices of a new graph : <input type="text" id="numV"> Ex - a,c,d,e<br/>
+        <input type="button" onclick="createGraphUI()" value="Create Graph"><br/><br/>
+        Add undirected edge between vertices  : <input type="text" id="edgeV"> Ex - a,c<br/>
+        <input type="button" onclick="addEdgeUI()" value="Add Edge"><br/><br/>
+        Adjacency List Representation of an undirected graph  : 
+        <div id="graphRep"></div><br/>
+        <input type="button" onclick="doDfsUI()" value="Do DFS"><br/><br/>
+        Dfs Result : 
+        <div id="dfsRes"></div><br/>
+        <script src="dfs.js"></script>
+    </body>
+</html>

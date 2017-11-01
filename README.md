@@ -5,8 +5,10 @@
 <p><strong>Completed :-</strong></p>
 
 <ul>
-	<li data-empty="true"><a href='https://vaibhavajaygupta.github.io/boilerplate-algorithms/CountingSort/JavascriptBoilerplate/CountingSort.html'  target="_blank">Demo Of Counting Sort </a> : Counting Sort sorting algorithm completed in javascript. </li>
-	<li data-empty="true"><a href='https://vaibhavajaygupta.github.io/boilerplate-algorithms/BreadthFirstSearch/javascript-boilerplate/bfs.html'  target="_blank">Demo Of Breadth First Search(BFS) </a> : Breadth First Search(BFS) algorithm completed in javascript. </li>
+<li><a href='https://vaibhavajaygupta.github.io/boilerplate-algorithms/DepthFirstSearch/javascript-boilerplate/dfs.html'  target="_blank">Demo Of Depth First Search(DFS) </a> : Depth First Search(DFS) algorithm completed in javascript. </li>
+<li><a href='https://vaibhavajaygupta.github.io/boilerplate-algorithms/BreadthFirstSearch/javascript-boilerplate/bfs.html'  target="_blank">Demo Of Breadth First Search(BFS) </a> : Breadth First Search(BFS) algorithm completed in javascript. </li>
+<li><a href='https://vaibhavajaygupta.github.io/boilerplate-algorithms/CountingSort/JavascriptBoilerplate/CountingSort.html'  target="_blank">Demo Of Counting Sort </a> : Counting Sort sorting algorithm completed in javascript. </li>
+	
 
 </ul>
 
