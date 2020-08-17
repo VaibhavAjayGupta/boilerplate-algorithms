@@ -49,3 +49,7 @@ function startProcessing(event) {
       sortedArray[counter2]=sortedArray[counter1];
       sortedArray[counter1]=temp;
   }
+
+  // quicksort recursion
+
+  // arranging values according to pivot
